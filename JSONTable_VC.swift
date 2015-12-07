@@ -23,10 +23,9 @@ class JSONTable_VC: UITableViewController {
             (data, response, error) -> Void in
             do {
                 let jsonData = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers)
-                //let listadoCursos = jsonData
                 self.cursosllberganza = (jsonData as? [NSDictionary])!
             } catch _ {
-                // Error
+                // Recoger el erroe
             }
             self.tableView.reloadData()
         }
@@ -73,6 +72,24 @@ class JSONTable_VC: UITableViewController {
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
 
         return cell
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "identificadorSegue" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                
+                let segueTextView = segue.destinationViewController as! Detalle_VC
+                segueTextView.textTV = self.cursosllberganza[indexPath.row]["descripcion"] as! String
+                
+                let segueLabel = segue.destinationViewController as! Detalle_VC
+                segueLabel.textoCelda = self.cursosllberganza[indexPath.row]["curso"] as! String
+                
+                let segueFirma = segue.destinationViewController as! Detalle_VC
+                segueFirma.firmaProfesor = self.cursosllberganza[indexPath.row]["profesor"] as! String
+            }
+        }
     }
 }
     

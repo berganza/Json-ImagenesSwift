@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09024F371C141C430003453E /* disenoCelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09024F361C141C430003453E /* disenoCelda.swift */; };
+		0923F26B1C1592FB00F7DC27 /* Detalle_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923F26A1C1592FB00F7DC27 /* Detalle_VC.swift */; };
 		9AE693991BE618E3003F81F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE693981BE618E3003F81F3 /* AppDelegate.swift */; };
 		9AE6939E1BE618E3003F81F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE6939C1BE618E3003F81F3 /* Main.storyboard */; };
 		9AE693A01BE618E3003F81F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE6939F1BE618E3003F81F3 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		09024F361C141C430003453E /* disenoCelda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = disenoCelda.swift; sourceTree = "<group>"; };
+		0923F26A1C1592FB00F7DC27 /* Detalle_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detalle_VC.swift; sourceTree = "<group>"; };
 		9AE693951BE618E3003F81F3 /* EjemploJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjemploJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE693981BE618E3003F81F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AE6939D1BE618E3003F81F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 			children = (
 				9AE693AE1BE61A7E003F81F3 /* JSONTable_VC.swift */,
 				09024F361C141C430003453E /* disenoCelda.swift */,
+				0923F26A1C1592FB00F7DC27 /* Detalle_VC.swift */,
 				9AE693971BE618E3003F81F3 /* EjemploJSON */,
 				9AE693961BE618E3003F81F3 /* Products */,
 			);
@@ -140,6 +143,7 @@
 			files = (
 				9AE693991BE618E3003F81F3 /* AppDelegate.swift in Sources */,
 				9AE693AF1BE61A7E003F81F3 /* JSONTable_VC.swift in Sources */,
+				0923F26B1C1592FB00F7DC27 /* Detalle_VC.swift in Sources */,
 				09024F371C141C430003453E /* disenoCelda.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
